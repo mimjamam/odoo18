@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="hotel_management_root_menu"
+                  name="Hotel Management"
+                  sequence="10"
+                  action="action_hotel_dashboard"
+                  web_icon="hotel_management,static/description/icon.png"/>
+    </data>
+</odoo>

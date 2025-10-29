@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Female patients action window -->
+    <record id="action_menu_female_patient" model="ir.actions.act_window">
+        <field name="name">Female Patients</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">list,form</field>
+        <!-- Apply domain -->
+        <field name="domain">[('gender', '=', 'female')]</field>
+        <!-- Set default value using context -->
+        <field name="context">{'default_gender': 'female'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new female patient.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_female_patient"
+              name="Female Patients"
+              action="action_menu_female_patient"
+              parent="menu_patient_master"
+              sequence="1"/>
+</odoo>

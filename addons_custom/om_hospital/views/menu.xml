@@ -1,0 +1,21 @@
+<odoo>
+    <!-- Parent menu -->
+    <menuitem id="menu_hospital_root"
+              name="Hospital"
+              sequence="0"
+              web_icon="om_hospital,static/description/hospital.svg"/>
+
+    <!-- Submenu -->
+    <menuitem id="menu_patient_master"
+              name="Patient Details"
+              parent="menu_hospital_root"
+              action="action_patient"
+              sequence="0"/>
+
+    <!-- Patients Cards Menu -->
+    <menuitem id="menu_patient_cards"
+              name="Patients Cards"
+              parent="menu_hospital_root"
+              action="action_patient_menu"
+              sequence="1"/>
+</odoo>
