@@ -17,9 +17,12 @@
     'data': [
         "security/ir.model.access.csv",
         "views/patient_views.xml",  # includes patients and actions
+        "views/appointment_views.xml", 
+        "views/female_patient_view.xml",  # depend on parent menu
+        "views/male_patient.xml", # load appointment actions before menu
         "views/menu.xml",  # menus depend on actions above
         "views/female_patient_view.xml",  # depend on parent menu
-        "views/male_patient.xml",
+        "views/male_patient.xml"
     ],
     'installable': True,
     'application': True,

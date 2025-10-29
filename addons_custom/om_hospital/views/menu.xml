@@ -18,4 +18,11 @@
               parent="menu_hospital_root"
               action="action_patient_menu"
               sequence="1"/>
+
+    <!-- Appointments Menu -->
+    <menuitem id="menu_hospital_appointments"
+              name="Appointments"
+              parent="menu_hospital_root"
+              action="action_hospital_appointment"
+              sequence="2"/>
 </odoo>
